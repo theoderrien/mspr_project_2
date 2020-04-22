@@ -37,7 +37,7 @@ public class HomeController extends HttpServlet {
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        /*
         // Connect to the URL using java's native library
         URL url = new URL("https://apex.oracle.com/pls/apex/myspacepc/hr/employees/");
         HttpURLConnection requete = (HttpURLConnection) url.openConnection();
@@ -48,7 +48,7 @@ public class HomeController extends HttpServlet {
         JsonElement root = jp.parse(new InputStreamReader((InputStream) requete.getContent())); //Convert the input stream to a json element
         JsonObject rootobj = root.getAsJsonObject(); //May be an array, may be an object.
         String job = rootobj.get("job").getAsString(); //just grab the job
-        System.out.println("job : " + job);
+        System.out.println("job : " + job);*/
 
 
         String date = request.getParameter("date");
